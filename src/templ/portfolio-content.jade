@@ -1,0 +1,81 @@
+	.card.bg-dark.text-white
+		.card-body.px-3
+			#content.px-3
+				h3.h3
+					span
+						i.fa.fa-book.text-warning.mr-2
+					|Портфолио
+				.row
+					.col-lg-3.col-md-6.my-3
+						a(href='#' data-toggle='modal' data-target='#modal-paps')
+							.card.bg-transparent.screen.rounded
+								img.card-img-top(src='/img/paps-xs.png')
+					.col-lg-3.col-md-6.my-3
+						a(href='#' data-toggle='modal' data-target='#modal-uvupo')
+							.card.bg-transparent.screen.rounded
+								img.card-img-top(src='/img/uvupo-xs.png')
+					.col-lg-3.col-md-6.my-3
+						a(href='#' data-toggle='modal' data-target='#modal-slovnyk')
+							.card.bg-transparent.screen.rounded
+								img.card-img-top(src='/img/slovnyk-xs.png')
+					.col-lg-3.col-md-6.my-3
+						a(href='#' data-toggle='modal' data-target='#modal-ebalans')
+							.card.bg-transparent.screen.rounded
+								img.card-img-top(src='/img/e-balans-xs.png')
+					.col-lg-3.col-md-6.my-3
+						a(href='#' data-toggle='modal' data-target='#modal-usv')
+							.card.bg-transparent.screen.rounded
+								img.card-img-top(src='/img/usv-xs.png')
+					.col-lg-3.col-md-6.my-3
+						a(href='#' data-toggle='modal' data-target='#modal-elitera')
+							.card.bg-transparent.screen.rounded
+								img.card-img-top(src='/img/elitera-xs.png')					
+					.col-lg-3.col-md-6.my-3
+						a(href='#' data-toggle='modal' data-target='#modal-literaltd')
+							.card.bg-transparent.screen.rounded
+								img.card-img-top(src='/img/literaltd-xs.png')
+				.clearfix
+				h3.h3
+					span
+						i.fa.fa-phone.text-warning.mr-2
+					|Контакты
+				.row
+					.col-md-6.col-12.my-3
+						img.img-fluid.rounded(src='/img/map-kyiv.png')
+					.col-md-6.col-12.my-3
+						.card.bg-transparent.mt-3.mt-md-0
+							.card-body
+								i.fa.fa-phone.mr-2
+								a.text-light(href='tel:0937733407')
+									|093-77-33-407
+						.card.bg-transparent.mt-3
+							.card-body
+								i.fa.fa-envelope.mr-2
+								a.text-light(href='mailto:larin.stan@gmail.com')
+									|larin.stan@gmail.com
+						.card.bg-transparent.mt-3
+							.card-body
+								a.text-light.mr-3(href='https://www.facebook.com/larinstanislav' target='_blank')
+									i.fa.fa-facebook-official.fa-2x
+								a.text-light.mr-3(href='https://www.linkedin.com/in/stanlarin/' target='_blank')
+									i.fa.fa-linkedin.fa-2x
+								a.text-light.mr-3(href='https://github.com/StanLarin' target='_blank')
+									i.fa.fa-github.fa-2x
+	script.
+		'use sctrict';
+		let cards = document.getElementsByClassName('card');
+		/*for (card of cards ) {
+			card.style.borderRadius = '0px';
+			}*/
+		cards[0].style.borderRadius = '0px';
+		let btns = document.getElementsByClassName('btn');
+		for (btn of btns) {
+			btn.style.letterSpacing = '0.9px';
+			}
+		let h3All = document.querySelectorAll('h3');
+		for (h3 of h3All) {
+			h3.style.display = 'inline-block';
+			h3.style.position = 'relative';
+			h3.classList.add('pr-3');
+			h3.classList.add('underline');
+			}

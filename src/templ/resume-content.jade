@@ -1,0 +1,109 @@
+	.card.bg-dark.text-white
+		.card-body.px-3
+			#content.px-3
+				h3.h3
+					span
+						i.fa.fa-user.text-warning.mr-2
+					|Резюме
+				.row
+					.col-lg-4.my-3
+						.card.bg-transparent
+							.card-body
+								ul.mb-0
+									li
+										|Имя: Станислав
+									li
+										|Фамилия: Ларин
+									li
+										|Возраст: 29
+									li
+										|Город: Киев
+									li
+										|Страна: Украина
+									li
+										|Семейный статус: женат
+					.col-lg-4.my-3
+						.card.bg-transparent
+							.card-body
+								p.mb-0
+									|Профессиональные умения и навыки:
+								ul.mb-0
+									li
+										|HTML5 & CSS3
+									li
+										|JavaScript
+									li
+										|Pug(Jade) & SCSS
+									li
+										|Gulp
+									li
+										|Git
+									li
+										|Bootstrap 3, 4
+									li
+										|jQuery
+									li
+										|Adobe Photoshop
+									li
+										|Adobe Xd
+									li
+										|Figma
+					.col-lg-4.my-3
+						.card.bg-transparent
+							.card-body
+								p.mb-0
+									|Образование:
+								ul.mb-0
+									li
+										a.text-light(href='#' target="_blank")
+											|2017 - CyberBionic Systematics / HTML CSS
+									li
+										a.text-light(href='#' target="_blank")
+											|2017 - CyberBionic Systematics / JavaScript Essential
+									li
+										|2015 - специалист по безопасности информационно-коммуникационных систем - Государственный университет телекоммуникаций (г.Киев, Украина)
+				h3.h3
+					span
+						i.fa.fa-phone.text-warning.mr-2
+					|Контакты
+				.row
+					.col-md-6.col-12
+						img.img-fluid.rounded(src='/img/map-kyiv.png')
+					.col-md-6.col-12
+						.card.bg-transparent.mt-3.mt-md-0
+							.card-body
+								i.fa.fa-phone.mr-2
+								a.text-light(href='tel:0937733407')
+									|093-77-33-407
+						.card.bg-transparent.mt-3
+							.card-body
+								i.fa.fa-envelope.mr-2
+								a.text-light(href='mailto:larin.stan@gmail.com')
+									|larin.stan@gmail.com
+						.card.bg-transparent.mt-3
+							.card-body
+								a.text-light.mr-3(href='https://www.facebook.com/larinstanislav' target='_blank')
+									i.fa.fa-facebook-official.fa-2x
+								a.text-light.mr-3(href='https://www.linkedin.com/in/stanlarin/' target='_blank')
+									i.fa.fa-linkedin.fa-2x
+								a.text-light.mr-3(href='https://github.com/StanLarin' target='_blank')
+									i.fa.fa-github.fa-2x
+
+	script.
+		'use sctrict';
+		let cards = document.getElementsByClassName('card');
+		/*for (card of cards ) {
+			card.style.borderRadius = '0px';
+			}*/
+		cards[0].style.borderRadius = '0px';
+		let btns = document.getElementsByClassName('btn');
+		for (btn of btns) {
+			btn.style.letterSpacing = '0.9px';
+			}
+		let h3All = document.querySelectorAll('h3');
+		for (h3 of h3All) {
+			h3.style.display = 'inline-block';
+			h3.style.position = 'relative';
+			h3.classList.add('pr-3');
+			h3.classList.add('underline');
+			}

@@ -1,0 +1,80 @@
+$bootstrap-color-warning: #ff7702;
+#container {
+	@media screen and (min-width: 992px) {
+		margin-top: 8vh;
+		//margin-bottom: 10vh;
+	}
+}
+#content {
+	overflow-x: hidden;
+	@media screen and (min-width: 992px) {
+		overflow-y: scroll;
+		height: 60vh;
+	}
+}
+
+#content::-webkit-scrollbar {
+	width: 3px;
+}
+#content::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+#content::-webkit-scrollbar-thumb {
+  background-color: $bootstrap-color-warning;
+  outline: 1 solid $bootstrap-color-warning;
+
+}
+
+
+h3 {
+	z-index: 3;
+}
+
+.underline {
+	position: relative;
+	z-index: 2;
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 5px;
+		right: 0;
+		max-width: 90%;
+		width: 100%;
+		border-bottom: 3px solid $bootstrap-color-warning;
+		z-index: -1;
+	}
+}
+
+.screen {
+	display: block;
+	height: 280px;
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+	& img {
+		max-width: 100%;
+		height: auto;
+		position: absolute;
+		z-index: 0;
+		margin: auto;
+		left: 0;
+		right: 0;
+		padding: 0;
+	}
+}
+
+.navbar-brand {
+	position: relative;
+	z-index: 1;
+	&::before {
+		content: '';
+		width: 30px;
+		height: 30px;
+		background: $bootstrap-color-warning;
+		position: absolute;
+		top: 3px;
+		left: -6px;
+		z-index: -1;
+		border-radius: 50%;
+	}
+}
